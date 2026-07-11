@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wendel Basso | Gerente Administrativo</title>
+<meta name="description" content="Página pessoal e profissional de Wendel Basso — Gerente Administrativo na Central Energética Morrinhos, Grupo Colorado.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Fraunces:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Background canvas de partículas -->
+<canvas id="bg-canvas"></canvas>
+
+<!-- ===== NAV ===== -->
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#home" class="logo">Wendel<span class="dot">.</span>Basso</a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="nav-link">Início</a>
+      <a href="#sobre" class="nav-link">Sobre</a>
+      <a href="#hobbies" class="nav-link">Hobbies</a>
+      <a href="#pessoal" class="nav-link">Pessoal</a>
+      <a href="#newsletter" class="nav-link">Newsletter</a>
+      <a href="#contato" class="nav-link">Contato</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button id="themeToggle" class="theme-toggle" aria-label="Alternar tema claro/escuro">
+        <svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20"><path d="M12 4.5V2m0 20v-2.5M4.5 12H2m20 0h-2.5M6.3 6.3 4.6 4.6m14.8 14.8-1.7-1.7M6.3 17.7l-1.7 1.7M19.4 4.6l-1.7 1.7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="12" r="5" fill="currentColor"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z" fill="currentColor"/></svg>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="home">
+  <div class="hero-blobs" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <div class="hero-content reveal">
+    <p class="hero-eyebrow">Olá, seja bem-vindo(a)</p>
+    <h1 class="hero-title">Eu sou <span class="gradient-text">Wendel Basso</span></h1>
+    <h2 class="hero-subtitle">
+      <span id="typed"></span><span class="cursor">|</span>
+    </h2>
+    <p class="hero-desc">
+      Gerente Administrativo na Central Energética Morrinhos, empresa do Grupo Colorado,
+      em Morrinhos &ndash; GO. Contador de formação, apaixonado por custos, orçamentos,
+      música, futebol e boas leituras.
+    </p>
+    <div class="hero-cta">
+      <a href="#sobre" class="btn btn-primary">Conheça minha trajetória</a>
+      <a href="#contato" class="btn btn-ghost">Fale comigo</a>
+    </div>
+  </div>
+
+  <a href="#sobre" class="scroll-indicator" aria-label="Rolar para baixo">
+    <span></span>
+  </a>
+</section>
+
+<!-- ===== SOBRE / PROFISSIONAL ===== -->
+<section class="section" id="sobre">
+  <div class="section-head reveal">
+    <span class="tag">Profissional</span>
+    <h2>Sobre mim</h2>
+    <p class="section-lead">Minha trajetória entre números, gestão e propósito.</p>
+  </div>
+
+  <div class="about-grid">
+    <div class="about-card reveal">
+      <div class="about-icon">
+        <svg viewBox="0 0 48 48" width="34" height="34"><rect x="6" y="14" width="36" height="26" rx="3" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M6 20h36" stroke="currentColor" stroke-width="2.5"/><path d="M16 14v-4a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v4" fill="none" stroke="currentColor" stroke-width="2.5"/></svg>
+      </div>
+      <h3>Central Energética Morrinhos</h3>
+      <p>Gerente Administrativo na empresa, parte do <strong>Grupo Colorado</strong>, localizada em Morrinhos &ndash; GO. Responsável pela gestão administrativa e apoio às decisões estratégicas do negócio.</p>
+    </div>
+
+    <div class="about-card reveal">
+      <div class="about-icon">
+        <svg viewBox="0 0 48 48" width="34" height="34"><path d="M24 6 6 14l18 8 18-8Z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/><path d="M12 20v10c0 3 5.4 6 12 6s12-3 12-6V20" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M42 14v12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+      </div>
+      <h3>Ciências Contábeis</h3>
+      <p>Formado em Ciências Contábeis, com especialização voltada para a área de <strong>Custos e Orçamentos</strong> &mdash; unindo precisão analítica à visão de gestão.</p>
+    </div>
+
+    <div class="about-card reveal">
+      <div class="about-icon">
+        <svg viewBox="0 0 48 48" width="34" height="34"><path d="M24 6v6M24 36v6M6 24h6M36 24h6M11 11l4.2 4.2M32.8 32.8 37 37M37 11l-4.2 4.2M15.2 32.8 11 37" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><circle cx="24" cy="24" r="9" fill="none" stroke="currentColor" stroke-width="2.5"/></svg>
+      </div>
+      <h3>Especialização</h3>
+      <p>Foco em custos e orçamentos empresariais, aplicando planejamento financeiro sólido para apoiar o crescimento sustentável da operação.</p>
+    </div>
+  </div>
+
+  <div class="stats-strip reveal">
+    <div class="stat">
+      <span class="stat-number" data-target="10">0</span><span class="stat-plus">+</span>
+      <span class="stat-label">Anos de atuação profissional</span>
+    </div>
+    <div class="stat">
+      <span class="stat-number" data-target="1">0</span>
+      <span class="stat-label">Grupo empresarial &mdash; Grupo Colorado</span>
+    </div>
+    <div class="stat">
+      <span class="stat-number" data-target="100">0</span><span class="stat-plus">%</span>
+      <span class="stat-label">Dedicação a custos e orçamentos</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== HOBBIES ===== -->
+<section class="section section-alt" id="hobbies">
+  <div class="section-head reveal">
+    <span class="tag">Pessoal &middot; Hobbies</span>
+    <h2>O que me move fora do escritório</h2>
+    <p class="section-lead">Futebol, música e boas histórias &mdash; três paixões que carrego comigo.</p>
+  </div>
+
+  <div class="hobbies-grid">
+
+    <!-- FUTEBOL -->
+    <article class="hobby-card reveal">
+      <div class="hobby-media hobby-media-spfc">
+        <svg viewBox="0 0 200 240" class="spfc-badge" role="img" aria-label="Emblema em homenagem ao São Paulo Futebol Clube, com São Pedro">
+          <defs>
+            <clipPath id="shieldClip">
+              <path d="M100 6 190 40 V120 C190 190 148 220 100 234 C52 220 10 190 10 120 V40 Z"/>
+            </clipPath>
+          </defs>
+          <path d="M100 2 194 37 V120 C194 194 150 226 100 240 C50 226 6 194 6 120 V37 Z" class="badge-outline"/>
+          <g clip-path="url(#shieldClip)">
+            <rect x="0" y="0" width="200" height="240" class="stripe stripe-white"/>
+            <rect x="0" y="0" width="200" height="60" class="stripe stripe-red"/>
+            <rect x="0" y="180" width="200" height="60" class="stripe stripe-black"/>
+            <circle cx="100" cy="120" r="46" class="badge-circle"/>
+            <!-- São Pedro: chave cruzada, simbolo tributo -->
+            <g class="key-symbol" transform="translate(100,120)">
+              <circle r="9" fill="none" stroke="currentColor" stroke-width="4"/>
+              <line x1="0" y1="9" x2="0" y2="34" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+              <line x1="0" y1="30" x2="-9" y2="30" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+              <line x1="0" y1="34" x2="7" y2="34" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+              <g transform="rotate(90)">
+                <line x1="0" y1="9" x2="0" y2="34" stroke="currentColor" stroke-width="4" stroke-linecap="round" opacity=".85"/>
+              </g>
+            </g>
+          </g>
+          <path d="M100 2 194 37 V120 C194 194 150 226 100 240 C50 226 6 194 6 120 V37 Z" class="badge-border"/>
+        </svg>
+      </div>
+      <div class="hobby-body">
+        <h3>Futebol &mdash; Tricolor de coração</h3>
+        <p>Torcedor apaixonado do <strong>São Paulo Futebol Clube</strong>. O emblema ao lado é minha homenagem ao São Pedro, padroeiro do clube, nas cores vermelho, preto e branco que carrego com orgulho.</p>
+        <span class="hobby-chip">#SPFC</span>
+      </div>
+    </article>
+
+    <!-- MÚSICA -->
+    <article class="hobby-card reveal">
+      <div class="hobby-media hobby-media-music">
+        <svg viewBox="0 0 220 260" class="guitar-illustration" role="img" aria-label="Ilustração de guitarra elétrica estilo superstrato, inspirada em modelos Ibanez">
+          <ellipse cx="110" cy="205" rx="70" ry="52" class="guitar-body"/>
+          <path d="M60 172 C40 190 40 220 68 236 C90 248 130 248 152 236 C180 220 180 190 160 172 Z" class="guitar-body-shine"/>
+          <circle cx="110" cy="195" r="26" class="guitar-hole"/>
+          <rect x="102" y="16" width="16" height="170" rx="6" class="guitar-neck"/>
+          <g class="guitar-frets">
+            <line x1="104" y1="40" x2="116" y2="40"/>
+            <line x1="104" y1="58" x2="116" y2="58"/>
+            <line x1="104" y1="76" x2="116" y2="76"/>
+            <line x1="104" y1="94" x2="116" y2="94"/>
+            <line x1="104" y1="112" x2="116" y2="112"/>
+            <line x1="104" y1="130" x2="116" y2="130"/>
+          </g>
+          <path d="M92 4 L128 4 L120 22 L100 22 Z" class="guitar-head"/>
+          <g class="guitar-tuners">
+            <circle cx="90" cy="8" r="3"/><circle cx="90" cy="16" r="3"/>
+            <circle cx="130" cy="8" r="3"/><circle cx="130" cy="16" r="3"/>
+          </g>
+          <g class="guitar-strings">
+            <line x1="106" y1="22" x2="106" y2="238"/>
+            <line x1="110" y1="22" x2="110" y2="238"/>
+            <line x1="114" y1="22" x2="114" y2="238"/>
+          </g>
+          <rect x="86" y="222" width="48" height="10" rx="3" class="guitar-bridge"/>
+        </svg>
+      </div>
+      <div class="hobby-body">
+        <h3>Música &mdash; Rock, Clássico e MPB</h3>
+        <p>Aprecio de rock a música clássica e MPB. Toco violão e guitarra &mdash; para "alegria" de quem está por perto (rs). A ilustração remete às minhas guitarras superstrato, no estilo Ibanez.</p>
+        <span class="hobby-chip">#Rock</span><span class="hobby-chip">#MPB</span><span class="hobby-chip">#Clássico</span>
+      </div>
+    </article>
+
+    <!-- LEITURA -->
+    <article class="hobby-card reveal">
+      <div class="hobby-media hobby-media-book">
+        <svg viewBox="0 0 200 260" class="book-cover" role="img" aria-label="Capa estilizada do livro Os Miseráveis, de Victor Hugo">
+          <rect x="8" y="8" width="184" height="244" rx="4" class="book-base"/>
+          <rect x="8" y="8" width="184" height="244" rx="4" class="book-frame"/>
+          <g class="book-silhouette">
+            <path d="M20 250 L20 190 Q100 150 180 190 L180 250 Z"/>
+            <rect x="45" y="150" width="8" height="60"/>
+            <rect x="70" y="130" width="8" height="80"/>
+            <rect x="95" y="145" width="8" height="65"/>
+            <rect x="120" y="120" width="8" height="90"/>
+            <rect x="145" y="150" width="8" height="60"/>
+          </g>
+          <circle cx="100" cy="80" r="30" class="book-emblem"/>
+          <path d="M100 60v40M84 80h32" stroke="currentColor" stroke-width="3" class="book-emblem-cross"/>
+          <text x="100" y="205" text-anchor="middle" class="book-title-fr">LES</text>
+          <text x="100" y="225" text-anchor="middle" class="book-title-fr">MISÉRABLES</text>
+          <text x="100" y="35" text-anchor="middle" class="book-author">VICTOR HUGO</text>
+        </svg>
+      </div>
+      <div class="hobby-body">
+        <h3>Leitura &mdash; Clássicos atemporais</h3>
+        <p>Prefiro os clássicos, com destaque para <strong>Alexandre Dumas</strong> e <strong>Victor Hugo</strong>. <em>Os Miseráveis</em> é meu livro preferido &mdash; a capa ao lado é uma releitura estilizada dessa obra que tanto me marcou.</p>
+        <span class="hobby-chip">#OsMiseráveis</span><span class="hobby-chip">#VictorHugo</span>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ===== PESSOAL ===== -->
+<section class="section" id="pessoal">
+  <div class="section-head reveal">
+    <span class="tag">Pessoal</span>
+    <h2>Família em primeiro lugar</h2>
+    <p class="section-lead">O que realmente importa no fim do dia.</p>
+  </div>
+
+  <div class="personal-wrap reveal">
+    <div class="personal-text">
+      <p>Nos momentos livres, meu lugar preferido é ao lado da <strong>família</strong>. Gosto de passear, viajar e explorar novos destinos &mdash; e se tiver uma <strong>praia</strong> no caminho, melhor ainda. É nesses momentos simples que reencontro energia para tudo o mais.</p>
+      <div class="personal-tags">
+        <span class="hobby-chip">#Família</span>
+        <span class="hobby-chip">#Viagens</span>
+        <span class="hobby-chip">#Praia</span>
+      </div>
+    </div>
+    <div class="personal-visual" aria-hidden="true">
+      <svg viewBox="0 0 320 220" class="beach-illustration">
+        <defs>
+          <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="var(--grad-sky-top)"/>
+            <stop offset="100%" stop-color="var(--grad-sky-bottom)"/>
+          </linearGradient>
+          <linearGradient id="seaGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="var(--grad-sea-top)"/>
+            <stop offset="100%" stop-color="var(--grad-sea-bottom)"/>
+          </linearGradient>
+        </defs>
+        <rect x="0" y="0" width="320" height="220" fill="url(#skyGrad)"/>
+        <circle cx="255" cy="45" r="26" class="sun"/>
+        <path d="M0 120 Q80 100 160 120 T320 120 V220 H0 Z" fill="url(#seaGrad)"/>
+        <path d="M0 150 Q80 132 160 150 T320 150 V220 H0 Z" class="wave"/>
+        <path d="M0 180 Q80 165 160 180 T320 180 V220 H0 Z" class="sand"/>
+        <g class="palm" transform="translate(48,95)">
+          <path d="M0 0 C-4 20 -2 45 4 70" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+          <path d="M0 0 C-25 -8 -40 -2 -48 8" class="palm-leaf"/>
+          <path d="M0 0 C-20 -22 -35 -20 -46 -12" class="palm-leaf"/>
+          <path d="M0 0 C10 -22 28 -24 40 -16" class="palm-leaf"/>
+          <path d="M0 0 C18 -6 32 2 40 12" class="palm-leaf"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ===== NEWSLETTER ===== -->
+<section class="section newsletter-section" id="newsletter">
+  <div class="newsletter-card reveal">
+    <div class="newsletter-text">
+      <h2>Vamos ficar em contato?</h2>
+      <p>Assine para receber novidades sobre gestão, custos &amp; orçamentos, e um pouco do que ando ouvindo, tocando e lendo.</p>
+    </div>
+    <form id="newsletterForm" class="newsletter-form" novalidate>
+      <div class="input-group">
+        <input type="email" id="newsletterEmail" placeholder="seu-email@exemplo.com" required aria-label="Seu e-mail para newsletter">
+        <button type="submit" class="btn btn-primary">
+          <span>Assinar</span>
+          <svg viewBox="0 0 24 24" width="18" height="18"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+      <p class="form-msg" id="newsletterMsg" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+<!-- ===== CONTATO ===== -->
+<section class="section" id="contato">
+  <div class="section-head reveal">
+    <span class="tag">Contato</span>
+    <h2>Vamos conversar</h2>
+    <p class="section-lead">Dúvidas, oportunidades ou só para trocar uma ideia sobre música e livros.</p>
+  </div>
+
+  <div class="contact-grid reveal">
+    <div class="contact-info">
+      <div class="contact-item">
+        <svg viewBox="0 0 24 24" width="22" height="22"><path d="M3 6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m4 7 8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+        <div>
+          <strong>E-mail</strong>
+          <span>contato@wendelbasso.com.br</span>
+        </div>
+      </div>
+      <div class="contact-item">
+        <svg viewBox="0 0 24 24" width="22" height="22"><path d="M12 21s7-6.1 7-11.5A7 7 0 0 0 5 9.5C5 14.9 12 21 12 21Z" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="9.5" r="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+        <div>
+          <strong>Localização</strong>
+          <span>Morrinhos &ndash; GO, Brasil</span>
+        </div>
+      </div>
+      <div class="contact-item">
+        <svg viewBox="0 0 24 24" width="22" height="22"><rect x="3" y="4" width="18" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 2v4M16 2v4M3 10h18" stroke="currentColor" stroke-width="1.8"/></svg>
+        <div>
+          <strong>Disponibilidade</strong>
+          <span>Seg &ndash; Sex, horário comercial</span>
+        </div>
+      </div>
+    </div>
+
+    <form id="contactForm" class="contact-form" novalidate>
+      <div class="field">
+        <input type="text" id="name" name="name" required placeholder=" ">
+        <label for="name">Nome</label>
+      </div>
+      <div class="field">
+        <input type="email" id="email" name="email" required placeholder=" ">
+        <label for="email">E-mail</label>
+      </div>
+      <div class="field">
+        <input type="text" id="subject" name="subject" placeholder=" ">
+        <label for="subject">Assunto</label>
+      </div>
+      <div class="field">
+        <textarea id="message" name="message" rows="4" required placeholder=" "></textarea>
+        <label for="message">Mensagem</label>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block">
+        <span>Enviar mensagem</span>
+        <svg viewBox="0 0 24 24" width="18" height="18"><path d="m3 11 18-8-8 18-2-8-8-2Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+      </button>
+      <p class="form-msg" id="contactMsg" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer-inner">
+    <a href="#home" class="logo">Wendel<span class="dot">.</span>Basso</a>
+    <p>&copy; <span id="year"></span> Wendel Basso &mdash; Feito com dedicação, café e um pouco de rock.</p>
+    <a href="#home" class="back-to-top" aria-label="Voltar ao topo">
+      <svg viewBox="0 0 24 24" width="20" height="20"><path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
